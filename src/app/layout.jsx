@@ -6,6 +6,12 @@ export const metadata = {
   keywords: ['gimnasio', 'software de gimnasio', 'GYMY AI', 'control de acceso', 'check-in QR', 'gestion deportiva'],
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className="dark bg-black">

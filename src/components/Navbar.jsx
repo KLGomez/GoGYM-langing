@@ -18,11 +18,11 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-3xl font-bold tracking-tight">
+            <span className="text-2xl sm:text-3xl font-bold tracking-tight">
               <span className="text-white">Go</span>
               <span className="text-[#ff914d] group-hover:text-[#ff3131] transition-colors">GYM</span>
             </span>
@@ -74,6 +74,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="text-gray-400 hover:text-white p-2"
               aria-label="Abrir menú"
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <XMarkIcon className="w-7 h-7" /> : <Bars3Icon className="w-7 h-7" />}
             </button>
@@ -83,31 +84,36 @@ export default function Navbar() {
 
       {/* Mobile menu panel */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-gray-950 border-b border-gray-800 px-4 pt-4 pb-6 space-y-4 animate-fadeIn">
+        <div className="md:hidden bg-gray-950 border-b border-gray-800 px-4 pt-3 pb-6 space-y-3 animate-fadeIn max-h-[calc(100vh-4rem)] overflow-y-auto">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-base font-medium text-gray-200 hover:text-[#ff914d] py-2"
+              className={`flex items-center gap-2 text-base font-medium py-2 transition-colors ${
+                item.highlight
+                  ? 'text-orange-400 font-semibold'
+                  : 'text-gray-200 hover:text-[#ff914d]'
+              }`}
             >
+              {item.highlight && <SparklesIcon className="w-4 h-4 text-orange-400 animate-pulse" />}
               {item.name}
             </a>
           ))}
-          <div className="pt-4 flex flex-col gap-3">
+          <div className="pt-3 flex flex-col gap-2.5">
             <a
               href="https://somosgogym.netlify.app/login"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded-lg font-semibold text-sm text-white bg-gray-900 border border-gray-700"
+              className="w-full text-center py-2.5 rounded-xl font-semibold text-sm text-white bg-gray-900 border border-gray-700"
             >
               Probar Demo
             </a>
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded-lg font-semibold text-sm text-black bg-gradient-to-r from-[#ff3131] to-[#ff914d]"
+              className="w-full text-center py-2.5 rounded-xl font-semibold text-sm text-black bg-gradient-to-r from-[#ff3131] to-[#ff914d]"
             >
               Comenzar Ahora
             </a>
