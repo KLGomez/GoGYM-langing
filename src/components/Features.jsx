@@ -49,11 +49,11 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="py-10 md:py-24 bg-black relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+    <section id="features" className="py-6 sm:py-8 md:py-24 bg-black relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8">
         
         {/* Title */}
-        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-16">
           <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 sm:mb-2">Todo lo que tu gimnasio necesita</p>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Diseñado para dueños, administradores y socios
