@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Gradient accents */
+.text-gradient {
+  background: linear-gradient(135deg, #ff3131 0%, #ff914d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-gogym {
+  background: linear-gradient(135deg, #ff3131 0%, #ff914d 100%);
+}
+
+.border-gradient-gogym {
+  border-image: linear-gradient(135deg, #ff3131, #ff914d) 1;
+}
+
+/* Card hover glow */
+.card-glow:hover {
+  box-shadow: 0 10px 30px -10px rgba(255, 145, 77, 0.3);
+}
+
+.ai-glow {
+  box-shadow: 0 0 50px -5px rgba(255, 110, 40, 0.25);
+}
