@@ -9,8 +9,8 @@ import {
 
 export default function QRCheckInShowcase() {
   return (
-    <section id="qr-checkin" className="py-10 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+    <section id="qr-checkin" className="py-6 sm:py-8 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8">
         
         {/* Single column in mobile (flex-col) and two columns in desktop (lg:grid) */}
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-12 items-center">

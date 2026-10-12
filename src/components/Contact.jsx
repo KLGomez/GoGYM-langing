@@ -25,8 +25,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-10 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+    <section id="contact" className="py-6 sm:py-8 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           

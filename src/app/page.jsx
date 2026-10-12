@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 
 export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-orange-500 selection:text-black">
+    <main className="w-full bg-black text-white overflow-x-clip selection:bg-orange-500 selection:text-black">
       <Navbar />
       <Hero />
       <GymyAISection />
