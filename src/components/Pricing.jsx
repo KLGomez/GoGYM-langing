@@ -53,20 +53,21 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-16 sm:py-20 md:py-24 bg-black relative">
+    <section id="pricing" className="py-12 md:py-24 bg-black relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-          <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-2">Precios transparentes</p>
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-10 md:mb-16">
+          <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 sm:mb-2">Precios transparentes</p>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Planes adaptados al tamaño de tu club
           </h2>
-          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-gray-400">
+          <p className="mt-2.5 sm:mt-4 text-xs sm:text-base md:text-lg text-gray-400 max-w-sm sm:max-w-xl md:max-w-3xl mx-auto leading-relaxed">
             Sin contratos forzados ni cargos ocultos. Cambiá o cancelá tu suscripción cuando quieras.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+        {/* Pricing cards: stack vertically in mobile (flex-col) and 3 cols in desktop (lg:grid) */}
+        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 sm:gap-8 items-stretch max-w-md lg:max-w-none mx-auto w-full">
           {plans.map((p, idx) => (
             <div
               key={idx}

@@ -49,28 +49,28 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="py-16 sm:py-20 md:py-24 bg-black relative">
+    <section id="features" className="py-12 md:py-24 bg-black relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Title */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
-          <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-2">Todo lo que tu gimnasio necesita</p>
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-10 md:mb-16">
+          <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 sm:mb-2">Todo lo que tu gimnasio necesita</p>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Diseñado para dueños, administradores y socios
           </h2>
-          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-gray-400">
+          <p className="mt-2.5 sm:mt-4 text-xs sm:text-base md:text-lg text-gray-400 max-w-sm sm:max-w-xl md:max-w-3xl mx-auto leading-relaxed">
             Una plataforma modular construida sobre arquitectura desacoplada, con el diseño distintivo negro y gradiente naranja de GoGYM.
           </p>
         </div>
 
-        {/* Feature Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+        {/* Feature Cards: Stacking vertically in mobile (flex-col w-full) and grid in desktop */}
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {features.map((feat, index) => {
             const Icon = feat.icon;
             return (
               <div
                 key={index}
-                className="bg-gray-900/70 border border-gray-800 rounded-2xl p-5 sm:p-6 md:p-7 hover:border-orange-500/60 transition-all duration-300 card-glow flex flex-col justify-between group"
+                className="w-full bg-gray-900/70 border border-gray-800 rounded-2xl p-5 sm:p-6 md:p-7 hover:border-orange-500/60 transition-all duration-300 card-glow flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4 sm:mb-5">
