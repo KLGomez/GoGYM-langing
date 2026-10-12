@@ -53,10 +53,10 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-6 sm:py-8 md:py-24 bg-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8">
+    <section id="pricing" className="py-6 sm:py-8 md:py-14 lg:py-16 bg-black relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 md:px-10 lg:px-12">
         
-        <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-10 lg:mb-12">
           <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 sm:mb-2">Precios transparentes</p>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Planes adaptados al tamaño de tu club
