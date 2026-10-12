@@ -43,7 +43,9 @@ export default function QRCheckInShowcase() {
 
             <div className="pt-4 flex items-center gap-4">
               <a
-                href="#demo"
+                href="https://somosgogym.netlify.app/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl font-bold text-sm text-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] hover:opacity-95 shadow-md shadow-orange-500/20"
               >
                 Ver Demostración en Vivo
