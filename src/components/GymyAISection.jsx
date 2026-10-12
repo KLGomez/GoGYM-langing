@@ -59,14 +59,14 @@ export default function GymyAISection() {
   const currentCap = capabilities.find(c => c.id === activeTab) || capabilities[0];
 
   return (
-    <section id="gymy-ai" className="py-6 sm:py-8 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
+    <section id="gymy-ai" className="py-6 sm:py-8 md:py-14 lg:py-16 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
       {/* Decorative background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[500px] sm:h-[400px] md:w-[800px] md:h-[500px] bg-orange-600/10 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 md:px-10 lg:px-12 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-10 lg:mb-12">
           <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-[10px] sm:text-xs font-semibold mb-2 sm:mb-4 max-w-full text-center">
             <SparklesIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-400 flex-shrink-0" />
             <span className="truncate sm:whitespace-normal">INTELIGENCIA ARTIFICIAL PARA GESTIÓN DEPORTIVA</span>
