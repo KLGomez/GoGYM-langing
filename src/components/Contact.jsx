@@ -25,8 +25,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-10 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
@@ -67,7 +67,7 @@ export default function Contact() {
 
           {/* Form column */}
           <div className="lg:col-span-7">
-            <div className="bg-gray-900/90 border border-gray-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 shadow-2xl relative">
+            <div className="bg-gray-900/90 border border-gray-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl relative">
               {submitted ? (
                 <div className="text-center py-10 sm:py-12 space-y-4">
                   <CheckCircleIcon className="w-14 h-14 sm:w-16 sm:h-16 text-green-400 mx-auto" />

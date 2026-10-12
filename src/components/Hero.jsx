@@ -9,12 +9,12 @@ import {
 
 export default function Hero() {
   return (
-    <section className="relative pt-24 pb-12 sm:pt-32 sm:pb-16 md:pt-44 md:pb-32 overflow-hidden">
+    <section className="relative pt-20 pb-10 sm:pt-28 sm:pb-14 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background radial gradients */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[340px] h-[340px] sm:w-[500px] sm:h-[400px] md:w-[700px] md:h-[450px] bg-gradient-to-tr from-[#ff3131]/20 via-[#ff914d]/15 to-transparent rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -top-10 right-0 sm:right-10 w-64 h-64 sm:w-96 sm:h-96 bg-orange-600/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 relative z-10 text-center">
         
         {/* Badge GYMY AI */}
         <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 rounded-full bg-gray-900 border border-orange-500/40 text-orange-400 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 hover:border-orange-500 transition-colors max-w-full">
@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Metrics Trust Bar */}
-        <div className="mt-10 sm:mt-16 pt-6 sm:pt-10 border-t border-gray-800/80 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 md:gap-8 max-w-4xl mx-auto text-center">
+        <div className="mt-8 sm:mt-12 md:mt-16 pt-6 sm:pt-10 border-t border-gray-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto text-center">
           <div>
             <p className="text-2xl sm:text-3xl font-extrabold text-orange-400">99.8%</p>
             <p className="text-xs sm:text-sm text-gray-400 mt-1">Check-ins QR Exitosos</p>
