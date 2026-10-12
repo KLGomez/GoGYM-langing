@@ -59,15 +59,15 @@ export default function GymyAISection() {
   const currentCap = capabilities.find(c => c.id === activeTab) || capabilities[0];
 
   return (
-    <section id="gymy-ai" className="py-12 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
+    <section id="gymy-ai" className="py-10 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
       {/* Decorative background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[500px] sm:h-[400px] md:w-[800px] md:h-[500px] bg-orange-600/10 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-10 md:mb-16">
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-[10px] sm:text-xs font-semibold mb-2.5 sm:mb-4 max-w-full text-center">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-16">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-[10px] sm:text-xs font-semibold mb-2 sm:mb-4 max-w-full text-center">
             <SparklesIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-400 flex-shrink-0" />
             <span className="truncate sm:whitespace-normal">INTELIGENCIA ARTIFICIAL PARA GESTIÓN DEPORTIVA</span>
           </div>
@@ -80,10 +80,10 @@ export default function GymyAISection() {
         </div>
 
         {/* Interactive Showcase Box */}
-        <div className="bg-gray-900/90 border border-gray-800 rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 md:p-10 shadow-2xl ai-glow max-w-5xl mx-auto">
+        <div className="bg-gray-900/90 border border-gray-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 shadow-2xl ai-glow max-w-5xl mx-auto">
           
           {/* Tabs */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-1.5 sm:gap-2 pb-4 sm:pb-6 border-b border-gray-800">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 pb-4 sm:pb-6 border-b border-gray-800">
             {capabilities.map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -106,7 +106,7 @@ export default function GymyAISection() {
           </div>
 
           {/* Interactive Chat Mockup */}
-          <div className="mt-5 sm:mt-8 grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-center">
+          <div className="mt-5 sm:mt-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
             
             {/* Chat conversation */}
             <div className="lg:col-span-7 bg-black/80 rounded-xl sm:rounded-2xl p-3 sm:p-5 border border-gray-800 space-y-3 sm:space-y-4">

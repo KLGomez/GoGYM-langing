@@ -9,11 +9,11 @@ import {
 
 export default function QRCheckInShowcase() {
   return (
-    <section id="qr-checkin" className="py-12 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="qr-checkin" className="py-10 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         
         {/* Single column in mobile (flex-col) and two columns in desktop (lg:grid) */}
-        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-12 items-center">
           
           {/* Text column: displays first */}
           <div className="w-full lg:col-span-6 space-y-4 sm:space-y-6">
@@ -56,7 +56,7 @@ export default function QRCheckInShowcase() {
 
           {/* Terminal Mockup: displays second, scaled for mobile */}
           <div className="w-full lg:col-span-6 flex justify-center">
-            <div className="w-full max-w-sm sm:max-w-md bg-gray-900 border-2 border-gray-800 rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 shadow-2xl relative">
+            <div className="w-full max-w-sm sm:max-w-md bg-gray-900 border-2 border-gray-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-2xl relative">
               <div className="flex items-center justify-between pb-3 sm:pb-4 border-b border-gray-800">
                 <div className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500" />

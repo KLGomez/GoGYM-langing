@@ -53,8 +53,8 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-12 md:py-24 bg-black relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" className="py-10 md:py-24 bg-black relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-10 md:mb-16">
           <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 sm:mb-2">Precios transparentes</p>
@@ -71,7 +71,7 @@ export default function Pricing() {
           {plans.map((p, idx) => (
             <div
               key={idx}
-              className={`rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-8 flex flex-col justify-between transition-all duration-300 relative ${
+              className={`rounded-2xl sm:rounded-3xl p-6 sm:p-7 lg:p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 p.featured
                   ? 'bg-gradient-to-b from-gray-900 to-gray-950 border-2 border-orange-500 shadow-2xl ai-glow scale-100 lg:scale-105 z-10'
                   : 'bg-gray-950 border border-gray-800 hover:border-gray-700'
