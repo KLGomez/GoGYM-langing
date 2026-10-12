@@ -52,7 +52,9 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="#demo"
+              href="https://somosgogym.netlify.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-xl font-semibold text-sm text-white bg-gray-900 border border-gray-700 hover:border-orange-500 transition-all cursor-pointer"
             >
               Probar Demo
@@ -94,7 +96,9 @@ export default function Navbar() {
           ))}
           <div className="pt-4 flex flex-col gap-3">
             <a
-              href="#demo"
+              href="https://somosgogym.netlify.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center py-3 rounded-lg font-semibold text-sm text-white bg-gray-900 border border-gray-700"
             >
