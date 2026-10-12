@@ -25,10 +25,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative">
+    <section id="contact" className="py-12 md:py-24 bg-gradient-to-b from-black via-gray-950 to-black relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           
           {/* Info column */}
           <div className="lg:col-span-5 space-y-6 sm:space-y-8">

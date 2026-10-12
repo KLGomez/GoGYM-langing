@@ -9,7 +9,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 md:pt-44 md:pb-32 overflow-hidden">
+    <section className="relative pt-24 pb-12 sm:pt-32 sm:pb-16 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background radial gradients */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[340px] h-[340px] sm:w-[500px] sm:h-[400px] md:w-[700px] md:h-[450px] bg-gradient-to-tr from-[#ff3131]/20 via-[#ff914d]/15 to-transparent rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -top-10 right-0 sm:right-10 w-64 h-64 sm:w-96 sm:h-96 bg-orange-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -24,19 +24,19 @@ export default function Hero() {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-tight sm:leading-tight">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-tight">
           La gestión de tu gimnasio, <br className="hidden sm:inline" />
           <span className="text-gradient">más ágil, visual e inteligente.</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+        <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-xl text-gray-400 max-w-sm sm:max-w-xl md:max-w-3xl mx-auto leading-relaxed">
           Centralizá socios, clases grupales, cobros de membresías y control de acceso por QR. 
           Dejá las tareas manuales en manos de <strong>GYMY AI</strong> y multiplicá la rentabilidad de tu club.
         </p>
 
         {/* CTA Group */}
-        <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full">
+        <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-sm sm:max-w-none mx-auto">
           <a
             href="#contact"
             className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base text-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] hover:opacity-95 shadow-xl shadow-orange-500/25 transition-all transform hover:scale-105 flex items-center justify-center gap-2 cursor-pointer"
@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Metrics Trust Bar */}
-        <div className="mt-12 sm:mt-16 pt-8 sm:pt-10 border-t border-gray-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto text-center">
+        <div className="mt-10 sm:mt-16 pt-6 sm:pt-10 border-t border-gray-800/80 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 md:gap-8 max-w-4xl mx-auto text-center">
           <div>
             <p className="text-2xl sm:text-3xl font-extrabold text-orange-400">99.8%</p>
             <p className="text-xs sm:text-sm text-gray-400 mt-1">Check-ins QR Exitosos</p>
