@@ -24,7 +24,7 @@ export default function Footer() {
               <li><a href="#features" className="hover:text-orange-400 transition-colors">Características</a></li>
               <li><a href="#gymy-ai" className="hover:text-orange-400 transition-colors">GYMY AI Assistant</a></li>
               <li><a href="#qr-checkin" className="hover:text-orange-400 transition-colors">Terminal QR</a></li>
-              <li><a href="#pricing" className="hover:text-orange-400 transition-colors">Planes y Precios</a></li>
+              <li><a href="#pricing" className="hover:text-orange-400 transition-colors">Planes</a></li>
             </ul>
           </div>
 

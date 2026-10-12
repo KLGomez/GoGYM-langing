@@ -1,6 +1,9 @@
 import React from 'react';
 import { CheckIcon, SparklesIcon } from '@heroicons/react/24/outline';
 
+// Cambiar a true cuando se definan los precios oficiales
+const SHOW_PRICES = false;
+
 export default function Pricing() {
   const plans = [
     {
@@ -15,7 +18,7 @@ export default function Pricing() {
         'Carnet digital descargable',
         'Soporte por correo electrónico',
       ],
-      cta: 'Elegir Plan Básico',
+      cta: SHOW_PRICES ? 'Elegir Plan Básico' : 'Consultar Plan Básico',
       featured: false,
     },
     {
@@ -32,7 +35,7 @@ export default function Pricing() {
         'Optimización automática de aforo y horarios',
         'Soporte prioritario por WhatsApp',
       ],
-      cta: 'Probar GoGYM Pro Gratis',
+      cta: SHOW_PRICES ? 'Probar GoGYM Pro Gratis' : 'Solicitar Prueba Gratuita',
       featured: true,
     },
     {
@@ -57,12 +60,16 @@ export default function Pricing() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6 md:px-10 lg:px-12">
         
         <div className="text-center max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-10 lg:mb-12">
-          <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 sm:mb-2">Precios transparentes</p>
+          <p className="text-orange-400 font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5 sm:mb-2">
+            {SHOW_PRICES ? 'Precios transparentes' : 'Planes a tu medida'}
+          </p>
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Planes adaptados al tamaño de tu club
           </h2>
           <p className="mt-2.5 sm:mt-4 text-xs sm:text-base md:text-lg text-gray-400 max-w-sm sm:max-w-xl md:max-w-3xl mx-auto leading-relaxed">
-            Sin contratos forzados ni cargos ocultos. Cambiá o cancelá tu suscripción cuando quieras.
+            {SHOW_PRICES
+              ? 'Sin contratos forzados ni cargos ocultos. Cambiá o cancelá tu suscripción cuando quieras.'
+              : 'Elegí la escala ideal para tu gimnasio. Dejanos tu consulta para recibir una propuesta personalizada y probar GoGYM sin costo.'}
           </p>
         </div>
 
@@ -88,10 +95,19 @@ export default function Pricing() {
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{p.name}</h3>
                 <p className="text-gray-400 text-xs sm:text-sm min-h-0 sm:min-h-[40px] mb-5 sm:mb-6">{p.description}</p>
 
-                <div className="flex items-baseline gap-1 mb-6 sm:mb-8">
-                  <span className="text-4xl sm:text-5xl font-extrabold text-white">{p.price}</span>
-                  <span className="text-gray-400 font-medium text-sm sm:text-base">{p.period}</span>
-                </div>
+                {SHOW_PRICES ? (
+                  <div className="flex items-baseline gap-1 mb-6 sm:mb-8">
+                    <span className="text-4xl sm:text-5xl font-extrabold text-white">{p.price}</span>
+                    <span className="text-gray-400 font-medium text-sm sm:text-base">{p.period}</span>
+                  </div>
+                ) : (
+                  <div className="mb-6 sm:mb-8">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-orange-500/10 border border-orange-500/30 text-orange-400 font-semibold text-xs sm:text-sm">
+                      <span>A Consultar</span>
+                    </div>
+                    <p className="text-xs text-gray-400 mt-2">Propuesta adaptada a la escala de tu gimnasio</p>
+                  </div>
+                )}
 
                 <div className="space-y-3 sm:space-y-3.5 pt-4 border-t border-gray-800">
                   {p.features.map((feat, fidx) => (
