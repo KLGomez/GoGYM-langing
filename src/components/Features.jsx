@@ -36,9 +36,9 @@ export default function Features() {
     },
     {
       title: 'Seguridad y Privacidad por Rol',
-      description: 'Paneles independientes protegidos con cookies y middleware para Administradores y Socios. Credenciales seguras sin contraseñas expuestas.',
+      description: 'Paneles independientes protegidos. Tu equipo ingresa solo a lo que necesita: la recepción no ve tu facturación y los profes solo ven sus clases.',
       icon: ShieldCheckIcon,
-      badge: 'Next.js Middleware',
+      badge: 'Accesos Seguros',
     },
     {
       title: 'Feedback y Encuestas de Clases',
@@ -59,7 +59,7 @@ export default function Features() {
             Diseñado para dueños, administradores y socios
           </h2>
           <p className="mt-2.5 sm:mt-4 text-xs sm:text-base md:text-lg text-gray-400 max-w-sm sm:max-w-xl md:max-w-3xl mx-auto leading-relaxed">
-            Una plataforma modular construida sobre arquitectura desacoplada, con el diseño distintivo negro y gradiente naranja de GoGYM.
+            Todas las herramientas operativas de tu gimnasio integradas en una sola pantalla rápida, intuitiva y accesible desde cualquier dispositivo.
           </p>
         </div>
 

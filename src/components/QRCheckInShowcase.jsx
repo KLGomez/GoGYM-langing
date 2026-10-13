@@ -30,7 +30,7 @@ export default function QRCheckInShowcase() {
             <ul className="space-y-3 sm:space-y-3.5 text-xs sm:text-sm md:text-base text-gray-300">
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                <span className="leading-snug">Escaneo en tiempo real con lector ZXing optimizado y soporte para cualquier cámara web o tablet.</span>
+                <span className="leading-snug">Compatible con cualquier cámara web, tablet o celular que ya tengas en recepción. Cero inversión en molinetes caros.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" />

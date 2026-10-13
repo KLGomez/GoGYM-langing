@@ -81,8 +81,8 @@ export default function Contact() {
             <div className="space-y-3.5 sm:space-y-4 text-xs sm:text-sm text-gray-300">
               <div className="flex items-start sm:items-center gap-3">
                 <EnvelopeIcon className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5 sm:mt-0" />
-                <a href="mailto:contacto@gogym.com" className="break-all sm:break-normal hover:text-orange-400 transition-colors">
-                  contacto@gogym.com
+                <a href="mailto:contacto@gogym.ar" className="break-all sm:break-normal hover:text-orange-400 transition-colors">
+                  contacto@gogym.ar
                 </a>
               </div>
               <div className="flex items-start sm:items-center gap-3">
