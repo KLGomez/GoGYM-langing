@@ -13,8 +13,7 @@ export default function Footer() {
               <span className="text-[#ff914d]">GYM</span>
             </Link>
             <p className="text-gray-400 text-xs sm:text-sm max-w-sm leading-relaxed">
-              Plataforma tecnológica desacoplada para gestión de gimnasios y centros de acondicionamiento físico. 
-              Impulsada por <strong>GYMY AI</strong> para potenciar las decisiones administrativas.
+              GoGYM Pro: Sistema de gestión y control de acceso inteligente para gimnasios y centros de entrenamiento.
             </p>
           </div>
 
@@ -41,7 +40,6 @@ export default function Footer() {
 
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-900 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-2 sm:gap-0 text-center sm:text-left">
           <p>© {new Date().getFullYear()} GoGYM. Todos los derechos reservados.</p>
-          <p>Diseñado con la estética oficial GoGYM (Negro + Gradiente Naranja).</p>
         </div>
       </div>
     </footer>
